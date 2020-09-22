@@ -62,20 +62,78 @@ const marksPaz = [paz1, paz2, paz3, paz4];
 console.log(marks);
 console.log(marksPaz);
 
-const fruits = ['orange', 'apple', 'banana', 'pineapple', 'kiwi'];
-
-console.log(fruits);
-
 console.log(marks);
 
 let sum = 0;
-sum = sum + marks[0];
-sum = sum + marks[1];
-sum = sum + marks[2];
-sum = sum + marks[3];
-sum = sum + marks[4];
-sum = sum + marks[5];
+let pazNum = -1;
+sum += marks[++pazNum];
+sum += marks[++pazNum];
+sum += marks[++pazNum];
+sum += marks[++pazNum];
+sum += marks[++pazNum];
+sum += marks[++pazNum];
 const count = marks.length;
 const average = sum / count;
 
 console.log('Marks average:', sum, '/', count, '=', average);
+
+console.log('----------------');
+console.log('----------------');
+console.log('----------------');
+
+const num = [1, 2, 3, 4, 5];
+
+let numSum = 0;
+let index = 0;
+
+numSum += num[index++];
+console.log(numSum);
+
+numSum += num[index++];
+console.log(numSum);
+
+numSum += num[index++];
+console.log(numSum);
+
+numSum += num[index++];
+console.log(numSum);
+
+numSum += num[index++];
+console.log(numSum);
+
+console.log('---------------');
+
+let money = 0;
+
+money += 7;
+console.log(money, 'pegenu');
+
+money += 15;
+console.log(money, 'pegenu');
+
+money += 31;
+console.log(money, 'pegenu');
+
+
+
+// matematiniai operatoriai:
+// paprasti: +, -, *, /
+// increment: ++ (before, after)
+// decrement: -- (before, after)
+// update: +=, -=, *=, /=
+
+console.log('---------------');
+
+const fruits = ['orange', 'apple', 'banana', 'pineapple', 'kiwi'];
+
+console.log(fruits);
+
+console.log(fruits[0] + ', ' + fruits[1] + ', ' + fruits[2] + ', ' + fruits[3] + ', ' + fruits[4]);
+
+
+let fi = 0;
+console.log(fruits[fi++] + ', ' + fruits[fi++] + ', ' + fruits[fi++] + ', ' + fruits[fi++] + ', ' + fruits[fi++]);
+
+
+let fidi = -1;
+console.log(fruits[++fidi] + ', ' + fruits[++fidi] + ', ' + fruits[++fidi] + ', ' + fruits[++fidi] + ', ' + fruits[++fidi]);
